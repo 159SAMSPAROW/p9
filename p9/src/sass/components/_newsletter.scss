@@ -1,0 +1,69 @@
+.app__newsletter {
+  margin-top: 2rem;
+  padding: 2rem 4rem;
+  border: 1px solid $color-golden;
+  z-index: 3;
+  background: $color-black;
+
+  &-heading {
+    text-align: center;
+  }
+
+  &-input {
+    flex-direction: row;
+    margin-top: 3rem;
+
+    & > input {
+      width: 620px;
+      border: 1ps solid $color-golden;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-family: $font-base;
+      color: $color-white;
+      margin-right: 2rem;
+      padding: 0.75rem 1rem;
+      background: $color-black;
+    }
+
+    & > button {
+      width: max-content;
+    }
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .app__newsletter-input > input {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .app__newsletter-input {
+    width: 100%;
+
+    & > input {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app_newsletter {
+    padding: 2rem 0;
+    border: none;
+  }
+  .app__newsletter-input {
+    flex-direction: column;
+
+    & > button {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .app__newsletter-heading h1 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+}

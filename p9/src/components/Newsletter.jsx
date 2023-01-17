@@ -1,8 +1,19 @@
 import React from 'react'
+import SubHeading from './SubHeading'
 
 const Newsletter = () => {
   return (
-    <div>Newsletter</div>
+    <div className="app__newsletter">
+      <div className="app__newsletter-heading">
+        <SubHeading title="NewsLetter" />
+        <h1 className="headtext__cormorant">Susbcribe To Our Newsletter</h1>
+        <p className="p__opensans">And never miss Latest Updates</p>
+      </div>
+      <div className="app__newsletter-input flex__center">
+        <input type="email" placeholder="Enter your Email" />
+        <button className="custom__button">Subscribe</button>
+      </div>
+    </div>
   )
 }
 
