@@ -482,6 +482,19 @@ a {
     width: 80%;
   }
 }
+.app__findus > h1 {
+  margin-bottom: 3rem;
+}
+.app__findus-content > p {
+  margin: 1rem 0;
+}
+.app__findus-content_opening-hours {
+  color: #dcca87;
+}
+.app__findus > button {
+  margin-top: 2rem;
+}
+
 .app__gallery {
   display: flex;
   flex-direction: row;

@@ -1,0 +1,21 @@
+.app__findus {
+
+  & > h1 {
+    margin-bottom: 3rem;
+  }
+
+  &-content {
+
+    & > p{
+        margin: 1rem 0;
+    }
+
+    &_opening-hours {
+      color: $color-golden;
+    }
+  }
+
+  & > button{
+    margin-top: 2rem;
+  }
+}
